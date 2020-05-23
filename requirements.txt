@@ -1,0 +1,11 @@
+# Run pip install --upgrade pip  cannot be found
+pytorch_lightning  
+transformers
+sentencepiece
+textwrap
+torch
+nltk
+pandas
+sklearn
+flask==1.0.3
+jsonify

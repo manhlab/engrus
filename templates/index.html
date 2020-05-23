@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordcount</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+    h1{
+      margin-left: 25%;
+    }  
+  textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  margin-left: 25%;
+  }
+  .btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  margin-top: 20px;
+  margin-left: 45%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    </style>
+     <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>English sentence: </h1>
+      <form method="POST"> 
+        <textarea name="textbox">{{ english }}</textarea>
+        <button type="submit" name="submit" class ="btn">Submit</button>
+    </div>
+    <div class="container">
+      <h1>Russian sentence: </h1>
+     
+        <textarea readonly>{{translate}}</textarea>
+    </div>
+  </body>
+</html>
